@@ -1,0 +1,45 @@
+    /*
+ * Elementos recursivos de solução de problemas.
+ * Método recursivo só é capaz de resolver o caso mais simples
+ * Se o método for chamado com o caso básico, o método retorna um resultado.
+
+ */
+package factorial1;
+
+
+/**
+ *
+ * @author nelsonmatala
+ */
+public class CalcularFactorial {
+    //metodo factorial recursivo
+    public long factorial1(long number){
+    if (number <= 1)// teste caso basico
+    
+return 1; // caso basico: 0! = 1 e 1!=1
+    else // Condição
+return number*factorial1 (number-1);
+} //   fim do metodo factorial  
+     
+//gera saida de factborial para valores 0-10
+    public void displayFactorials(){
+    //  metodo enquanto  || com Contador incrementador   
+    
+for (int counter = 0; counter <=10; counter++ )
+    // metodo saida do contador factorial 
+            System.out.printf("%d! = %d\n", counter, factorial1(counter) );
+
+}// fim do metodo displayFactorials
+}// fim do metodo displayFactorials
+
+/*import java util Scanner; 
+public class; 
+scanner in = new scanner  (System.In); 
+ System.out.printf (""); 
+int n = in.nextInt (); 
+ System.out.printf (""); 
+int m = in.nextInt (); 
+
+for (int counter = n.counter <= m)
+System.out.printf ("%d! = %d\n", counter, factorial1(counter"); 
+  */   
