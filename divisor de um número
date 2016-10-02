@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane; public class P1_Q1 {
+public static void main(String[] args) {
+String str = JOptionPane.showInputDialog("Digite um número"); //introduzir o digito
+int num = Integer.parseInt(str);//comando de integração
+for (int i = 1; i<=num; i++) {//se o numero inserido for inteiro procure os divisores 
+    System.out.println("");//Saida Auxiliar
+    if(num%i==0){ System.out.println(i);//mostra o divisores do numero em Questão
+
+} }
+
+
+}
+
+    } 
+
