@@ -1,0 +1,26 @@
+ /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package testfibonacci;
+
+/**
+ *
+ * @author nelsonmatala
+ */
+public class CalcularFibonacci {
+   // declaração recursiva do metodo Fibonacci
+    public long fibonacci (long number)
+ {
+     if ((number== 0 || number ==1))
+         return number; 
+     else 
+         return fibonacci (number-1) + fibonacci (number-2); 
+     
+ }  
+    public void displayFibonacci(){
+        for ( int counter = 0; counter <= 10; counter++)
+            System.out.printf("Fibonacci de %d é: %d\n", counter, fibonacci(counter));
+    }
+}
